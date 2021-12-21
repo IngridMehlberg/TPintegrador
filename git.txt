@@ -1,0 +1,6 @@
+git pull 					--me actualiza la copia del repo en mi maquina (porque quizas X persona realizó una modificacion)
+git status					--me indica las modificaciones que se hicieron.
+git add .					--agarra todas las modificaciones que se hicieron en el repo, se suben a la bolsita que estan en la copia de mi repo.
+git status 					--para chequear que se hayan agregado los cambios a la bolsita
+git commit -m"archivo.txt" 			--que sea expresivo el archivo! Identifico los cambios, es el nombre de los cambios que realizo.
+git push origin main				--trabajamos sobre la rama main. Comete los cambios.
