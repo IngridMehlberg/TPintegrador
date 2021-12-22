@@ -4,6 +4,7 @@ import net.sourceforge.argparse4j.inf.ArgumentParserException;
 import net.sourceforge.argparse4j.inf.Namespace;
 
 import java.io.IOException;
+import java.lang.management.GarbageCollectorMXBean;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -11,13 +12,22 @@ public class Main {
     public static void main(String[] args) {
         OperacionesIO op = new OperacionesIO();
 
-        //        --venta vender --vendedor 3 --vehiculo1 124145627457 --output \desktop\ventas.csv
+        //        --venta vender --vendedor 3 --vehiculo1 124145627457 --ideventa 67375637 --output \desktop\ventas.csv
+
+        //
+
 
         ArgumentParser parser = ArgumentParsers.newFor("Proyecto Utn").build()
                 .defaultHelp(true)
                 .description("Concesionaria");
         parser.addArgument("--venta").type(String.class).required(true);
-        parser.addArgument("--vehiculo").type(String.class).required(true);
+        parser.addArgument("--vehiculoid").type(String.class).required(true);
+        parser.addArgument("--empleadoid").type(String.class).required(true);
+        parser.addArgument("--idventa").type(String.class).required(true);
+        parser.addArgument("--output").type(String.class).required(true);
+
+
+
 
 
         Namespace ns = null;

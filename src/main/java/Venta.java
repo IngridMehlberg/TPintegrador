@@ -9,7 +9,7 @@ public class Venta {
     private Vendedores vendedor;
 
     public Venta() {
-        this.idVenta = ++ contadorVenta;
+        this.idVenta = ++contadorVenta;
     }
     public Venta(Vendedores vendedor,Vehiculo vehiculo,LocalDate fecha){
 
