@@ -4,48 +4,34 @@ public class Venta {
     private int idVenta;
     private static int contadorVenta;
     private LocalDate fecha;
+    private Vehiculo vehiculo;
     //private  itemVenta[] item; //no sabemos o no discutimos como hacerlo
-    private Cliente cliente;
     private Vendedores vendedor;
 
     public Venta() {
         this.idVenta = ++ contadorVenta;
     }
+    public Venta(Vendedores vendedor,Vehiculo vehiculo,LocalDate fecha){
 
-    public int getIdVenta() {
-        return idVenta;
+
+
     }
 
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-    public Vendedores getVendedor() {
-        return vendedor;
-    }
 
     public void setVendedor(Vendedores vendedor) {
         this.vendedor = vendedor;
     }
 
-    public double precioFinal(){
 
-        return 0;
-    }
-    public void mostrarVenta(){
+    public void setVehiculo(Vehiculo vehiculo){
+
 
     }
-    public void agregarItemVenta(){
+    public void setFecha(LocalDate fecha){
+        this.fecha = fecha;
 
     }
-    public void quitarItemVenta(){
-
-    }
-    public void bajaStock(){
+    public void agregarItemVenta() {
 
     }
 }

@@ -1,11 +1,11 @@
 import java.sql.*;
 
 public class Conexion {
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test?usaSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
-    private static final String JDBC_USER = "root";
-    private static final String JDBC_PASSWORD = "Lucas09032018";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/proyectoutn";
+    private static final String JDBC_USER = "Lucas";
+    private static final String JDBC_PASSWORD = "Pasalacqua17";
 
-    public static Connection getConnection() throws SQLException {
+    public  Connection getConnection() throws SQLException {
         return DriverManager.getConnection(JDBC_URL,JDBC_USER,JDBC_PASSWORD);
     }
     public static void close(ResultSet rs) throws SQLException{
